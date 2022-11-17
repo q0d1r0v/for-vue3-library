@@ -1,18 +1,10 @@
 <script setup lang="ts">
-import { onMounted } from 'vue';
-
 
 const props = defineProps<{
     value: string,
     placeholder?: string,
     type?: string
 }>()
-
-onMounted(() => {
-    document.getElementById('v-input')?.addEventListener("input", (e) => {
-        props.value = document.getElementById('v-input').value
-    })
-})
 
 </script>
 
